@@ -1,0 +1,76 @@
+.header {
+  &__title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 50px;
+    color: #979487;
+    font-family: $primary-font;
+    font-weight: bold;
+  }
+}
+
+.global__container {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 30vw;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__input {
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: 2em;
+      padding: 0 10px;
+      width: 88%;
+      background-color: #979487;
+
+      @media all and (min-width: 768px) {
+        padding: 0px;
+        width: 100%;
+        font-size: 2em;
+      }
+    }
+    &__button-search {
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: 2em;
+      background-color: #e2d38f;
+      color: #444341;
+    }
+  }
+}
+
+::placeholder {
+  color: #444341;
+  font-family: $primary-font;
+  font-size: medium;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.aside {
+  &__fav__title {
+    text-align: left;
+    font-family: $primary-font;
+    font-weight: bold;
+    color: #e2d38f;
+    margin-top: 20px;
+  }
+  &__fav__list {
+    list-style: none;
+    padding: 0px;
+  }
+}
