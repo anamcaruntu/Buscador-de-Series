@@ -1,0 +1,22 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - eslint > lodash:
+        patched: '2022-10-05T15:43:04.495Z'
+    - gulp-sass > lodash:
+        patched: '2022-10-05T15:43:04.495Z'
+    - browser-sync > easy-extender > lodash:
+        patched: '2022-10-05T15:43:04.495Z'
+    - eslint > inquirer > lodash:
+        patched: '2022-10-05T15:43:04.495Z'
+    - eslint > table > lodash:
+        patched: '2022-10-05T15:43:04.495Z'
+    - gulp-sass > node-sass > lodash:
+        patched: '2022-10-05T15:43:04.495Z'
+    - gulp-sass > node-sass > sass-graph > lodash:
+        patched: '2022-10-05T15:43:04.495Z'
+    - gulp-sass > node-sass > gaze > globule > lodash:
+        patched: '2022-10-05T15:43:04.495Z'
